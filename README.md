@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Frontend Gym App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es el frontend de la aplicación para la gestión de un gimnasio. La aplicación permite a los usuarios consultar los planes de suscripción y el historial de asistencias. Está construida con **React** y **Axios** para la integración con el backend.
 
-## Available Scripts
+## Tabla de Contenidos
 
-In the project directory, you can run:
+- [Requisitos previos](#requisitos-previos)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Contribuciones](#contribuciones)
 
-### `npm start`
+## Requisitos previos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Antes de comenzar, asegúrate de tener los siguientes programas instalados en tu máquina:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Node.js** (v14 o superior): https://nodejs.org/
+- **npm** (v6 o superior), que normalmente se instala junto con Node.js: https://www.npmjs.com/
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sigue estos pasos para clonar y configurar el proyecto en tu máquina local:
 
-### `npm run build`
+1. Clona el repositorio:
+    ```bash
+    git clone https://github.com/Marttify/frontend-gym-app.git
+    cd frontend-gym-app
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instala las dependencias:
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Si todo se ha instalado correctamente, puedes iniciar el servidor de desarrollo:
+    ```bash
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Esto abrirá la aplicación en tu navegador en `http://localhost:3000`.
 
-### `npm run eject`
+## Uso
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Una vez que el servidor esté en funcionamiento, abre tu navegador y navega hasta `http://localhost:3000` para ver la aplicación en acción.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Funcionalidades
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Listado de asistencias**: Muestra el historial de asistencias de los usuarios, con información sobre el usuario, la fecha y el estado de la asistencia (presente o ausente).
+- **Listado de planes**: Permite consultar los planes de suscripción disponibles, con su duración y precio.
+- **Manejo de errores**: Si hay un error al obtener los datos desde la API, la aplicación utiliza datos simulados (mocks).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Estructura del Proyecto
 
-## Learn More
+El proyecto está organizado de la siguiente manera:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Descripción de carpetas y archivos clave:
 
-### Analyzing the Bundle Size
+- `src/components/`: Contiene los componentes principales de la UI, como la lista de asistencias y planes.
+- `src/services/api.js`: Archivo donde se configura Axios para interactuar con la API del backend.
+- `src/services/json.js`: Contiene datos simulados (mock) que se usan si ocurre un error al obtener datos de la API.
+- `src/App.js`: Componente principal que organiza los diferentes componentes y maneja la lógica de la aplicación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tecnologías Utilizadas
 
-### Making a Progressive Web App
+- **React**: Biblioteca de JavaScript para construir la interfaz de usuario.
+- **Axios**: Cliente HTTP para realizar solicitudes a la API.
+- **React Hooks**: Para manejar el estado y efectos en los componentes.
+- **CSS**: Estilos básicos para la interfaz de usuario.
+  
+## Contribuciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Las contribuciones son bienvenidas. Si tienes sugerencias o mejoras para el proyecto, por favor abre un *issue* o realiza un *pull request*. Para contribuir:
 
-### Advanced Configuration
+1. Haz un fork del repositorio.
+2. Crea una nueva rama: `git checkout -b nueva-caracteristica`.
+3. Realiza tus cambios y haz commit: `git commit -m 'Agregar nueva característica'`.
+4. Sube tus cambios a tu repositorio: `git push origin nueva-caracteristica`.
+5. Abre un pull request en este repositorio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Gracias por tu interés en este proyecto. Si tienes alguna pregunta, no dudes en abrir un *issue*.
