@@ -1,6 +1,16 @@
-# Frontend Gym App
+# frontend-gym-app
 
-Este es el frontend de la aplicación para la gestión de un gimnasio. La aplicación permite a los usuarios consultar los planes de suscripción y el historial de asistencias. Está construida con **React** y **Axios** para la integración con el backend.
+Este proyecto es la interfaz de usuario para la aplicación de gimnasio.
+
+## Descripción del Proyecto
+`frontend-gym-app` es una aplicación web de frontend que permite a los usuarios interactuar con el sistema de gestión de gimnasio. Los usuarios pueden registrarse, gestionar entrenamientos, ver su progreso y más, todo a través de una interfaz de usuario intuitiva.
+
+Este proyecto se conecta con el backend de base de datos proporcionado en [db-gym-testing](https://github.com/Marttify/db-gym-testing).
+
+## Conexión con el Backend
+Este repositorio interactúa con el [db-gym-testing](https://github.com/Marttify/db-gym-testing), que maneja las pruebas y la gestión de la base de datos. Juntos, ambos proyectos forman una solución de software integral para la gestión de gimnasio.
+
+---
 
 ## Tabla de Contenidos
 
