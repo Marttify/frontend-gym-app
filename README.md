@@ -81,7 +81,12 @@ El proyecto está organizado de la siguiente manera:
 - **React Hooks**: Para manejar el estado y efectos en los componentes.
 - **CSS**: Estilos básicos para la interfaz de usuario.
 
-![proyecto-gym](https://github.com/user-attachments/assets/01150b09-77fc-496c-ac22-e180f60d1f18)
+---
+
+## Diagrama
+![proyecto-gym](https://github.com/user-attachments/assets/efc5f76c-edab-4b0b-856e-2223c0b19633)
+
+---
   
 ## Contribuciones
 
