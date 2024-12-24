@@ -80,6 +80,8 @@ El proyecto está organizado de la siguiente manera:
 - **Axios**: Cliente HTTP para realizar solicitudes a la API.
 - **React Hooks**: Para manejar el estado y efectos en los componentes.
 - **CSS**: Estilos básicos para la interfaz de usuario.
+
+![proyecto-gym](https://github.com/user-attachments/assets/01150b09-77fc-496c-ac22-e180f60d1f18)
   
 ## Contribuciones
 
